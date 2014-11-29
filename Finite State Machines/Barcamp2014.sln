@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FiniteStateMachine", "FiniteStateMachine\FiniteStateMachine.vcxproj", "{A6878621-1E03-4C4C-AD9F-436D951A7897}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FiniteStateMachineWithMessages", "FiniteStateMachineWithMessages\FiniteStateMachineWithMessages.vcxproj", "{CCB5CC97-8834-407A-9039-049B28669954}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6878621-1E03-4C4C-AD9F-436D951A7897}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A6878621-1E03-4C4C-AD9F-436D951A7897}.Debug|Win32.Build.0 = Debug|Win32
+		{A6878621-1E03-4C4C-AD9F-436D951A7897}.Release|Win32.ActiveCfg = Release|Win32
+		{A6878621-1E03-4C4C-AD9F-436D951A7897}.Release|Win32.Build.0 = Release|Win32
+		{CCB5CC97-8834-407A-9039-049B28669954}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CCB5CC97-8834-407A-9039-049B28669954}.Debug|Win32.Build.0 = Debug|Win32
+		{CCB5CC97-8834-407A-9039-049B28669954}.Release|Win32.ActiveCfg = Release|Win32
+		{CCB5CC97-8834-407A-9039-049B28669954}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
