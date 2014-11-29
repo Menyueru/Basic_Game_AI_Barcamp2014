@@ -19,7 +19,7 @@ void Program::Enter(Programador* programador)
 {
 	if (programador->Location() != 1)
 	{
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 		cout << "\n" << "Juan" << ": " << "Es Hora de ponerse a Trabajar";
 
 		programador->ChangeLocation(1);
@@ -30,7 +30,7 @@ void Program::Enter(Programador* programador)
 void Program::Execute(Programador* programador)
 {
 	programador->WorkHour();
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 	cout << "\n" << "Juan" << ": " << "Codear es lo maximo";
 
 	if (programador->Sleepy())
@@ -42,7 +42,7 @@ void Program::Execute(Programador* programador)
 
 void Program::Exit(Programador* programador)
 {
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 	cout << "\n" << "Juan" << ": " << "Suficiente codeo por hoy";
 }
 
@@ -59,7 +59,7 @@ void Sleeping::Enter(Programador* programador)
 {
 	if (programador->Location() != 0)
 	{
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 		cout << "\n" << "Juan" << ": " << "A dormir un ratico";
 
 		programador->ChangeLocation(0);
@@ -70,7 +70,7 @@ void Sleeping::Enter(Programador* programador)
 void Sleeping::Execute(Programador* programador)
 {	
 	programador->SleepHour();
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 	cout << "\n" << "Juan" << ": " << "ZZZZZZZZZZZZZZZZZZ";
 	if (programador->SleepEnough())
 	{
@@ -81,6 +81,6 @@ void Sleeping::Execute(Programador* programador)
 
 void Sleeping::Exit(Programador* programador)
 {
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 	cout << "\n" << "Juan" << ": " << "Otra buena siesta!!!!";
 }

@@ -21,7 +21,7 @@ void Program::Enter(Programador* programador)
 {
 	if (programador->Location() != work)
 	{
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 		cout << "\n" << "Juan" << ": " << "Es Hora de ponerse a Trabajar";
 
 		programador->ChangeLocation(work);
@@ -32,7 +32,7 @@ void Program::Enter(Programador* programador)
 void Program::Execute(Programador* programador)
 {
 	programador->WorkHour();
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 	cout << "\n" << "Juan" << ": " << "Codear es lo maximo";
 
 	if (programador->Sleepy())
@@ -44,7 +44,7 @@ void Program::Execute(Programador* programador)
 
 void Program::Exit(Programador* programador)
 {
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 	cout << "\n" << "Juan" << ": " << "Suficiente codeo por hoy";
 }
 
@@ -66,7 +66,7 @@ void Sleeping::Enter(Programador* programador)
 {
 	if (programador->Location() != house)
 	{
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 		cout << "\n" << "Juan" << ": " << "A dormir un ratico";
 
 		programador->ChangeLocation(house);
@@ -77,7 +77,7 @@ void Sleeping::Enter(Programador* programador)
 void Sleeping::Execute(Programador* programador)
 {	
 	programador->SleepHour();
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 	cout << "\n" << "Juan" << ": " << "ZZZZZZZZZZZZZZZZZZ";
 	if (programador->SleepEnough())
 	{
@@ -88,7 +88,7 @@ void Sleeping::Execute(Programador* programador)
 
 void Sleeping::Exit(Programador* programador)
 {
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 	cout << "\n" << "Juan" << ": " << "Otra buena siesta!!!!";
 }
 
@@ -135,7 +135,7 @@ void DrinkBeer::Enter(Programador* programador)
 {
 	if (programador->Location() != bar)
 	{
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 		cout << "\n" << "Juan" << ": " << "Que aburrido estoy, vamos a beber un chin!!";
 
 		programador->ChangeLocation(bar);
@@ -146,7 +146,7 @@ void DrinkBeer::Enter(Programador* programador)
 
 void DrinkBeer::Execute(Programador* programador)
 {
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 	programador->HourInBar();
 	if (programador->Has_Drink())
 	{
@@ -166,7 +166,7 @@ void DrinkBeer::Execute(Programador* programador)
 
 void DrinkBeer::Exit(Programador* programador)
 {
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 	cout << "\n" << "Juan" << ": " << "Suficiente alcohol por ahora";
 	programador->FinishDrink();
 }
